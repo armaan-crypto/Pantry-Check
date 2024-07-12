@@ -11,6 +11,17 @@
 		08CB3C5F2C3A1093004D0DD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB3C5E2C3A1093004D0DD6 /* ContentView.swift */; };
 		08CB3C612C3A1095004D0DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CB3C602C3A1095004D0DD6 /* Assets.xcassets */; };
 		08CB3C642C3A1095004D0DD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CB3C632C3A1095004D0DD6 /* Preview Assets.xcassets */; };
+		08CB3C6B2C3A10BB004D0DD6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB3C6A2C3A10BB004D0DD6 /* Home.swift */; };
+		08CB3C6D2C3A1424004D0DD6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB3C6C2C3A1424004D0DD6 /* Models.swift */; };
+		08CB3C6F2C3AF44F004D0DD6 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB3C6E2C3AF44F004D0DD6 /* URLImage.swift */; };
+		08CB3C722C3AF485004D0DD6 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 08CB3C712C3AF485004D0DD6 /* CachedAsyncImage */; };
+		08CB3C752C3B0882004D0DD6 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 08CB3C742C3B0882004D0DD6 /* CodeScanner */; };
+		08CB3C772C3B43CE004D0DD6 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB3C762C3B43CE004D0DD6 /* Scanner.swift */; };
+		08CB3C792C3B505E004D0DD6 /* DataScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB3C782C3B505E004D0DD6 /* DataScanner.swift */; };
+		08CB3C7C2C3B5428004D0DD6 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 08CB3C7B2C3B5428004D0DD6 /* AlertToast */; };
+		08CB3C7E2C3C5359004D0DD6 /* EditRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB3C7D2C3C5359004D0DD6 /* EditRooms.swift */; };
+		08CB3C812C3C7054004D0DD6 /* FoodDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB3C802C3C7054004D0DD6 /* FoodDetails.swift */; };
+		08CB3C832C3C7D45004D0DD6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB3C822C3C7D45004D0DD6 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,15 @@
 		08CB3C5E2C3A1093004D0DD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		08CB3C602C3A1095004D0DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08CB3C632C3A1095004D0DD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08CB3C6A2C3A10BB004D0DD6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		08CB3C6C2C3A1424004D0DD6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		08CB3C6E2C3AF44F004D0DD6 /* URLImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		08CB3C762C3B43CE004D0DD6 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		08CB3C782C3B505E004D0DD6 /* DataScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScanner.swift; sourceTree = "<group>"; };
+		08CB3C7D2C3C5359004D0DD6 /* EditRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRooms.swift; sourceTree = "<group>"; };
+		08CB3C802C3C7054004D0DD6 /* FoodDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetails.swift; sourceTree = "<group>"; };
+		08CB3C822C3C7D45004D0DD6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		08CB3C842C404B51004D0DD6 /* Pantry-Check-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pantry-Check-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CB3C7C2C3B5428004D0DD6 /* AlertToast in Frameworks */,
+				08CB3C752C3B0882004D0DD6 /* CodeScanner in Frameworks */,
+				08CB3C722C3AF485004D0DD6 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +74,17 @@
 		08CB3C5B2C3A1093004D0DD6 /* Pantry Check */ = {
 			isa = PBXGroup;
 			children = (
+				08CB3C842C404B51004D0DD6 /* Pantry-Check-Info.plist */,
 				08CB3C5C2C3A1093004D0DD6 /* Pantry_CheckApp.swift */,
 				08CB3C5E2C3A1093004D0DD6 /* ContentView.swift */,
 				08CB3C602C3A1095004D0DD6 /* Assets.xcassets */,
 				08CB3C622C3A1095004D0DD6 /* Preview Content */,
+				08CB3C6A2C3A10BB004D0DD6 /* Home.swift */,
+				08CB3C762C3B43CE004D0DD6 /* Scanner.swift */,
+				08CB3C7D2C3C5359004D0DD6 /* EditRooms.swift */,
+				08CB3C802C3C7054004D0DD6 /* FoodDetails.swift */,
+				08CB3C7F2C3C6EAB004D0DD6 /* Model */,
+				08CB3C822C3C7D45004D0DD6 /* ImagePicker.swift */,
 			);
 			path = "Pantry Check";
 			sourceTree = "<group>";
@@ -65,6 +95,16 @@
 				08CB3C632C3A1095004D0DD6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08CB3C7F2C3C6EAB004D0DD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08CB3C6C2C3A1424004D0DD6 /* Models.swift */,
+				08CB3C6E2C3AF44F004D0DD6 /* URLImage.swift */,
+				08CB3C782C3B505E004D0DD6 /* DataScanner.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +123,11 @@
 			dependencies = (
 			);
 			name = "Pantry Check";
+			packageProductDependencies = (
+				08CB3C712C3AF485004D0DD6 /* CachedAsyncImage */,
+				08CB3C742C3B0882004D0DD6 /* CodeScanner */,
+				08CB3C7B2C3B5428004D0DD6 /* AlertToast */,
+			);
 			productName = "Pantry Check";
 			productReference = 08CB3C592C3A1093004D0DD6 /* Pantry Check.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,11 @@
 				Base,
 			);
 			mainGroup = 08CB3C502C3A1093004D0DD6;
+			packageReferences = (
+				08CB3C702C3AF485004D0DD6 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				08CB3C732C3B0882004D0DD6 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				08CB3C7A2C3B5428004D0DD6 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 08CB3C5A2C3A1093004D0DD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CB3C7E2C3C5359004D0DD6 /* EditRooms.swift in Sources */,
 				08CB3C5F2C3A1093004D0DD6 /* ContentView.swift in Sources */,
+				08CB3C6B2C3A10BB004D0DD6 /* Home.swift in Sources */,
 				08CB3C5D2C3A1093004D0DD6 /* Pantry_CheckApp.swift in Sources */,
+				08CB3C6F2C3AF44F004D0DD6 /* URLImage.swift in Sources */,
+				08CB3C792C3B505E004D0DD6 /* DataScanner.swift in Sources */,
+				08CB3C812C3C7054004D0DD6 /* FoodDetails.swift in Sources */,
+				08CB3C832C3C7D45004D0DD6 /* ImagePicker.swift in Sources */,
+				08CB3C772C3B43CE004D0DD6 /* Scanner.swift in Sources */,
+				08CB3C6D2C3A1424004D0DD6 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,16 +333,19 @@
 				DEVELOPMENT_TEAM = ZGVKCP72NR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pantry-Check-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Food Inventory";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Pantry Check needs access to the camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "armaanahmed.Pantry-Check";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -304,16 +365,19 @@
 				DEVELOPMENT_TEAM = ZGVKCP72NR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pantry-Check-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Food Inventory";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Pantry Check needs access to the camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "armaanahmed.Pantry-Check";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -344,6 +408,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08CB3C702C3AF485004D0DD6 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+		08CB3C732C3B0882004D0DD6 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.0;
+			};
+		};
+		08CB3C7A2C3B5428004D0DD6 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08CB3C712C3AF485004D0DD6 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08CB3C702C3AF485004D0DD6 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+		08CB3C742C3B0882004D0DD6 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08CB3C732C3B0882004D0DD6 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		08CB3C7B2C3B5428004D0DD6 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08CB3C7A2C3B5428004D0DD6 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08CB3C512C3A1093004D0DD6 /* Project object */;
 }

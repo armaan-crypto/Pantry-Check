@@ -9,13 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Home()
+                .onAppear(perform: {
+//                    resetDefaults()
+                    if UserDefaults.standard.value(forKey: "default") == nil {
+                        let d = UIImage(named: "fill")?.jpegData(compressionQuality: 1.0)
+                        UserDefaults.standard.setValue(d, forKey: "default")
+                    }
+                })
         }
-        .padding()
+    }
+    
+    func resetDefaults() {
+        UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+        UserDefaults.standard.synchronize()
     }
 }
 
