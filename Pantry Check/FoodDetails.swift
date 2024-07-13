@@ -30,14 +30,41 @@ struct FoodDetails: View {
                             image
                                 .resizable()
                                 .scaledToFill()
-                                .frame(height: 400)
+                                .frame(width: UIScreen.main.bounds.width, height: 400)
                                 .clipped()
-                                .cornerRadius(20)
                         }
-                        Text(food.name)
-                            .font(.system(size: 24, weight: .bold))
-                        Text("Quantity: \(food.quantity)")
-                            .font(.system(size: 20))
+//                        Text(food.name)
+//                            .font(.system(size: 24, weight: .bold))
+//                        Text("Quantity: \(food.quantity)")
+//                            .font(.system(size: 20))
+                        List {
+                            HStack(spacing: 20) {
+                                Text("Name")
+                                    .bold()
+                                Spacer()
+                                Text(food.name)
+                            }
+                            HStack(spacing: 20) {
+                                Text("Quantity")
+                                    .bold()
+                                Spacer()
+                                Text("\(food.quantity)")
+                            }
+                            HStack(spacing: 20) {
+                                Text("Barcode")
+                                    .bold()
+                                Spacer()
+                                Text(food.upc)
+                            }
+                            HStack(spacing: 20) {
+                                Text("Element ID")
+                                    .bold()
+                                Spacer()
+                                Text("\(food.id)")
+                            }
+                        }
+                        .scrollDisabled(true)
+                        .frame(height: 300)
                         Spacer()
                     }
                 }
@@ -86,6 +113,7 @@ struct FoodDetails: View {
                 }
             }
         }
+        .background(.background.secondary)
         .onAppear(perform: {
             name = food.name
         })

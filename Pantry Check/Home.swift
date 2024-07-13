@@ -91,8 +91,8 @@ struct Home: View {
     @State var searched = ""
     let layout = [
         GridItem(.flexible(minimum: 40)),
-        GridItem(.flexible(minimum: 40)),
-        GridItem(.flexible(minimum: 40)),
+//        GridItem(.flexible(minimum: 40)),
+//        GridItem(.flexible(minimum: 40)),
         GridItem(.flexible(minimum: 40))
     ]
     @State var showScanner = false
@@ -124,7 +124,7 @@ struct Home: View {
                                 .padding(.vertical, 5)
                                 Divider()
                             }
-                            .background(.blue)
+                            .background(.black)
                             .foregroundColor(.white)
                             .bold()
                         }
@@ -132,6 +132,7 @@ struct Home: View {
                 }
             }
         }
+        .background(.background.secondary)
         .task {
             do {
                 try await model.load()
@@ -228,42 +229,48 @@ struct FoodCard: View {
                 .foregroundStyle(.black)
         } label: {
             ZStack {
-                VStack {
+                HStack {
                     URLImage(url: food.image) { image in
                         image
                             .resizable()
                             .scaledToFill()
-                            .frame(width: UIScreen.main.bounds.width / 4, height: 100)
+//                            .frame(width: 60, height: 60)
+                            .frame(width: UIScreen.main.bounds.width / 4 - 20, height: UIScreen.main.bounds.width / 4 - 20)
                             .clipped()
                     }
-                    .padding(.top, 5)
                     Spacer()
                     Text(food.name)
                         .lineLimit(2)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 5)
+                        .foregroundColor(.white)
+                        .fontWeight(.semibold)
                     Spacer()
                 }
                 if food.quantity != 1 {
                     VStack {
                         HStack {
-                            Spacer()
                             Text(" \(food.quantity) ")
                                 .padding(5)
-                                .background(.blue)
+                                .background(.black)
                                 .cornerRadius(20)
                                 .foregroundColor(.white)
+                                .bold()
+                            Spacer()
                         }
                         Spacer()
                     }
                     .padding(10)
                 }
             }
-            .background(.white)
-    //        .cornerRadius(10)
-            .border(Color.init(uiColor: .systemGray4))
+            .background(.blue)
+            .cornerRadius(10)
+//            .border(Color.init(uiColor: .systemGray4))
+            .shadow(radius: 4)
         }
         .buttonStyle(PlainButtonStyle())
+        .frame(width: (UIScreen.main.bounds.width / 2) - 20)
+        .padding(.horizontal)
     }
 }
 
